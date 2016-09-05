@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cordi">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:background="@color/textColorPrimary"
+            android:gravity="center_horizontal|center_vertical">
+            <TextView
+                android:id="@+id/currentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.4"
+            android:columnCount="4"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:rowCount="2"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv1"
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:text="Status"
+                            style="@style/CardText"
+                            />
+
+                        <TextView
+                            android:id="@+id/statusValue"
+                            style="@style/CardText" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv2"
+
+                    style="?attr/cardStyle">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/health"
+                            style="@style/CardText"
+                            android:text="Health"
+                           />
+
+                        <TextView
+                            android:id="@+id/healthValue"
+                            style="@style/CardText2"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv3"
+
+                    style="?attr/cardStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/level"
+                            style="@style/CardText"
+                            android:text="Level"
+                            />
+
+                        <TextView
+                            android:id="@+id/levelValue"
+                            style="@style/CardText2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv4"
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/temp"
+                            style="@style/CardText"
+                            android:text="Temperature"
+                            />
+
+                        <TextView
+                            android:id="@+id/tempValue"
+                            style="@style/CardText2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/volt"
+                            style="@style/CardText"
+                            android:text="Voltage"
+                            />
+
+                        <TextView
+                            android:id="@+id/voltValue"
+                            style="@style/CardText2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tech"
+                            style="@style/CardText"
+                            android:text="Technology"
+                            />
+
+                        <TextView
+                            android:id="@+id/techValue"
+                            style="@style/CardText2"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/osversion"
+                            style="@style/CardText"
+                            android:text="OS Version"
+                            />
+
+                        <TextView
+                            android:id="@+id/osversionValue"
+                            style="@style/CardText2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/model"
+                            style="@style/CardText"
+                            android:text="Model"
+                            />
+
+                        <TextView
+                            android:id="@+id/modelValue"
+                            style="@style/CardText2" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    style="?attr/cardStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/device"
+                            style="@style/CardText"
+                            android:text="Device"
+                            />
+
+                        <TextView
+                            android:id="@+id/deviceValue"
+                            style="@style/CardText2"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:src="@drawable/abc_ic_ab_back_material"
+        android:textColor="@android:color/black"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="center_horizontal|center_vertical|bottom" />
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,68 @@
+<resources>
+
+    <attr format="reference" name="cardStyle"/>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+
+    </style>
+    <style name="T1" parent="AppTheme">
+        <item name="cardStyle">@style/CardStyle</item>
+    </style>
+    <style name="T2" parent="AppTheme">
+        <item name="cardStyle">@style/CardStyle2</item>
+    </style>
+    <style name="CardStyle" parent="CardView">
+
+
+    <item name="cardBackgroundColor">@color/cardbg</item>
+    <item name="android:layout_weight">0.3</item>
+    <item name="android:layout_height">60dp</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_margin">5dp</item>
+    <item name="android:orientation">vertical</item>
+
+</style>
+
+    <style name="CardText" parent="CardView">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10dp</item>
+
+    </style>
+    <style name="CardText2" parent="CardView">
+        <item name="android:textColor">@color/navigationBarColor</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="CardStyle2" parent="CardView">
+
+
+        <item name="cardBackgroundColor">@color/cardBlue</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+</resources>
